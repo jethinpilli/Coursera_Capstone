@@ -1,0 +1,49 @@
+I'm going to use data set provided in Week 1 about collisions in Seattle (Data-Collisions.csv) and after
+checking the data there is a need to clean them and select main features used in
+the further analysis. Cleaning of data mainly consists of:
+- unification of values in columns (some used Y,N,1,0) - UNDERINFL
+- binary codification of Y/N values into 1/0
+- convert values in column to same data type (int)
+- convert INCDATE from str into Date type
+- drop NaN and empty rows in the selected features which we are going to use
+
+I will drop the following columns from the dataset:
+- OBJECTID
+- REPORNO
+- STATUS
+- INTKEY
+- LOCATION
+- EXCEPTRSNCODE
+- EXCEPTRSNDESC
+- PEDCYLCOUNT
+- PEDCOUNT
+- INCDTTM
+- SDOT_COLDESC
+- INATTENTIONIND
+- UNDERINFL
+- PEDROWNOTGRNT
+- SDOTCOLNUM
+- SPEEDING
+- ST_COLDESC
+- SEGLANEKEY
+- CROSSWALKKEY
+
+I will use the following columns:
+- HITPARKEDCAR
+- LIGHTCOND
+- ROADCOND
+- WEATHER
+- SDOT_COLCODE
+- JUNCTIONTYPE
+- INCDATE
+- VEHCOUNT
+- PERSONCOUNT
+- COLLISIONTYPE
+- SEVERITYCODE
+- ADDRTYPE
+- X
+- Y
+- INCKEY
+- COLDETKEY
+
+In these some are numerical columns and some are categorical columns. 
